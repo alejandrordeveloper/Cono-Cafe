@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CONŌ CAFĒ® | Carrito</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="/styles/output.css" />
+  <link rel="stylesheet" href="/styles/styles.css" />
+</head>
+<body class="bg-[#f5f3ef] text-[#1B1013] font-poppins antialiased">
+  <main class="max-w-3xl mx-auto px-4 py-10">
+    <header class="flex justify-between items-center mb-8">
+      <h1 class="text-[#39FF14] font-bold text-2xl md:text-3xl">Carrito</h1>
+      <a href="/" class="text-[#39FF14] font-semibold hover:underline text-base">Seguir comprando</a>
+    </header>
+
+    <section class="bg-[#552c07] text-white rounded-lg p-6 mb-8 shadow-lg">
+      <h2 class="text-[#39FF14] text-lg font-bold mb-2">Campaña “Vuelta al Mundo” en marcha</h2>
+      <p class="text-sm mb-2">Debido al volumen excepcional de pedidos, los plazos de preparación y entrega podrían extenderse entre <strong>15 y 30 días naturales</strong>.</p>
+      <p class="text-sm"><strong>Importante:</strong> Durante esta campaña no se admitirán devoluciones.</p>
+    </section>
+
+    <section class="flex flex-col gap-6">
+      <div class="flex items-center gap-4 bg-[#552c07] text-white p-4 rounded-lg shadow-md">
+        <img src="/images/burundi.png" alt="Burundi Bourbon" class="w-16 h-16 object-cover rounded-md" />
+        <div>
+          <h3 class="text-[#39FF14] font-bold text-base mb-1">CONŌ CAFĒ®</h3>
+          <p class="text-sm">Burundi Bourbon – Lavado</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 bg-[#552c07] text-white p-4 rounded-lg shadow-md">
+        <img src="/images/geisha.png" alt="Geisha Lavado" class="w-16 h-16 object-cover rounded-md" />
+        <div>
+          <h3 class="text-[#39FF14] font-bold text-base mb-1">CONŌ CAFĒ®</h3>
+          <p class="text-sm">Geisha – Lavado</p>
+        </div>
+      </div>
+    </section>
+
+    <form id="checkoutForm" class="mt-10 text-center">
+      <input type="button" value="Proceder al Pago" id="payButton"
+        class="bg-[#39FF14] text-black font-bold px-6 py-3 rounded-md shadow-[0_0_10px_#39FF14] hover:bg-[#1B1013] hover:text-white transition duration-300 cursor-pointer" />
+    </form>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
